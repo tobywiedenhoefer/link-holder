@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import List, AnyStr
 import json
 
+
 @dataclass
 class Card:
     user_id: AnyStr
@@ -10,6 +11,8 @@ class Card:
     description: AnyStr
     tags: List[AnyStr]
     collection: int
+    title: AnyStr
+
     def build_dict(self) -> dict:
         return {
             "user_id": self.user_id,
@@ -17,7 +20,9 @@ class Card:
             "link": self.link,
             "description": self.description,
             "tags": self.tags,
-            "collection": self.collection
+            "collection": self.collection,
+            "title": self.title
         }
+
     def build_json_str(self) -> str:
         return json.dumps(self.build_dict())

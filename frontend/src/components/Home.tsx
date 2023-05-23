@@ -40,7 +40,7 @@ export const Home = () => {
                     return (
                         <div className="card" key={card.card_id}>
                             <h3 className="card-title">
-                                {card.link}
+                                <a href={card.link || "#"}>{card.title}</a>
                             </h3>
                             <p className="card-description">
                                 {card.description}

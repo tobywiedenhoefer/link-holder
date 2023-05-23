@@ -23,7 +23,8 @@ class HomeView(APIView):
                 link='https://www.twitter.com',
                 description="Twitter's official website",
                 tags=['Official', 'twitter'],
-                collection=1
+                collection=1,
+                title='Twitter'
             ),
             Card(
                 user_id='1',
@@ -31,7 +32,8 @@ class HomeView(APIView):
                 link='https://www.google.com',
                 description="Google's official website",
                 tags=['Official', 'google'],
-                collection=1
+                collection=1,
+                title='Google'
             ),
         ]
         content = {

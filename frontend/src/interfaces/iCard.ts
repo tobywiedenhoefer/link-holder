@@ -5,4 +5,5 @@ export default interface ICard {
     description: string,
     tags: string[],
     collection: number
+    title: string
 }
