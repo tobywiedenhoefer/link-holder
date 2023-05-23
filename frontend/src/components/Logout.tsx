@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect} from "react"
 import axios from "axios"
 
 export const Logout = () => {
     useEffect(() => {
         (async () => {
             try {
-                const {data} = await axios.post(
+                await axios.post(
                     'http://localhost:8000', {
                         'refresh_token': localStorage.getItem('refresh_token')
                     },
