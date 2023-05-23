@@ -1,0 +1,57 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    position: -webkit-sticky;
+}
+
+.card {
+    height: 15rem;
+    background-color: #C9B8FF;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #0003;
+    transition: 0.4s ease-out;
+    left: 0;
+    display: flex;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card-title {
+    color: #666666;
+    font-weight: 500;
+    position: absolute;
+    left: 1rem;
+    top: 0.75rem;
+}
+
+.card-description {
+    color: #666666;
+    font-weight: 500;
+    position: absolute;
+    left: 1rem;
+    top: 5rem;
+}
+
+.tags {
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    transform: translateY(12rem);
+}
+
+.tag {
+    padding: 0 0.5rem 0 0.5rem;
+    color: #666666;
+}
+
+.tag:link {
+    text-decoration: none;
+}
+
+.home-title {
+    padding: 1rem 0 2rem 0;
+}
