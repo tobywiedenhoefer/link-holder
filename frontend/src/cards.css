@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
     position: -webkit-sticky;
+    padding: 0 1rem 0 1rem;
 }
 
 .card {

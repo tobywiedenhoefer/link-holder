@@ -12,12 +12,8 @@ export function Navigation() {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="/" className="navbar-brand">JWT Authentication</Navbar.Brand>
+                <Navbar.Brand href="/" className="navbar-brand">Link Holder</Navbar.Brand>
                 <Nav className="me-auto">
-                    {isAuth ?
-                        <Nav.Link href="/">Home</Nav.Link> :
-                        null
-                    }
                 </Nav>
                 <Nav>
                     {isAuth ?
