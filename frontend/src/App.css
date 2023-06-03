@@ -53,7 +53,7 @@
   width: 420px;
   box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-radius: 8px;
   background-color: white;
 }
@@ -83,4 +83,41 @@ label {
 
 .login-logout {
   padding-right: 2rem;
+}
+
+.searchbar {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.search-tags {
+  padding: 0 2rem 1rem 2rem
+}
+
+.search-tag {
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding: 5px 0.5rem 5px 0.5rem;
+  border-radius: 8px;
+}
+
+
+.search-tag:before{
+  display: inline-block;
+  content: "\00d7";
+  margin-right: 5px;
+  opacity: 0.3;
+  color: black;
+}
+
+.search-tag:hover {
+  transform: translateY(-0.25rem);
+  transition: 0.4s ease-out;
+}
+
+.search-tag:hover:before {
+  opacity: 1;
+  color: red;
+}
+
+p+p {
+  margin-left: 10px;
 }

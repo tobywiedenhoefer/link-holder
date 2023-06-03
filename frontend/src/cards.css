@@ -1,9 +1,9 @@
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 30px;
     position: -webkit-sticky;
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
 }
 
 .card {
@@ -51,8 +51,4 @@
 
 .card:link {
     text-decoration: none;
-}
-
-.home-title {
-    padding: 1rem 0 2rem 0;
 }
